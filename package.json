@@ -1,0 +1,58 @@
+{
+  "name": "vite-template-solid",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "pre-build": "cpy 'src/images/**/*.{png,jpeg,jpg}' 'dist/src/images'",
+    "build": "vite build",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
+    "prepare": "husky install",
+    "husky:init": "npx husky-init",
+    "pre-commit": "lint-staged",
+    "ts:check": "tsc -p tsconfig.json --noEmit",
+    "serve": "vite preview",
+    "server": "cd json-server && yarn server"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@savvywombat/tailwindcss-grid-areas": "^2.1.0",
+    "@types/velocity-animate": "^2.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1",
+    "@vitejs/plugin-legacy": "^2.0.1",
+    "autoprefixer": "^10.4.8",
+    "cpy-cli": "^3.1.1",
+    "eslint": "8.22.0",
+    "eslint-plugin-solid": "^0.7.1",
+    "husky": "^7.0.4",
+    "lint-staged": "^13.0.3",
+    "postcss": "^8.4.16",
+    "solidjs-eslint-config": "https://github.com/DigiChanges/solidjs-eslint-config",
+    "tailwindcss": "^3.1.8",
+    "typescript": "^4.8.2",
+    "vite": "^3.0.9",
+    "vite-plugin-solid": "^2.3.0"
+  },
+  "dependencies": {
+    "@digichanges/solid-components": "^0.7.0",
+    "@felte/solid": "^1.2.3",
+    "@felte/validator-yup": "^1.0.9",
+    "@hope-ui/solid": "^0.6.7",
+    "@stitches/core": "^1.2.8",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "axios": "^0.27.2",
+    "cash-dom": "^8.1.1",
+    "solid-app-router": "^0.4.2",
+    "solid-i18n": "^1.0.2",
+    "solid-js": "^1.5.4",
+    "solid-transition-group": "^0.0.11",
+    "velocity-animate": "^1.5.2",
+    "yup": "^0.32.11"
+  },
+  "engines": {
+    "node": ">=16.*"
+  }
+}
