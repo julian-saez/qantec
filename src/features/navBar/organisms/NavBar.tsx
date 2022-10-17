@@ -2,7 +2,6 @@ import { Icon, IconButton, Menu, MenuContent, MenuItem, MenuTrigger } from '@hop
 import { Link } from 'solid-app-router';
 import { Text } from 'solid-i18n';
 import { Component } from 'solid-js';
-import logoNav from '../../../assets/images/dgc_logo.png';
 import IconBell from '../../../atoms/Icons/Stroke/IconBell';
 import IconBurger from '../../../atoms/Icons/Stroke/IconBurger';
 import IconChevronDown from '../../../atoms/Icons/Stroke/IconChevronDown';
@@ -26,10 +25,10 @@ const NavBar: Component<NavbarTemplateProps> = props =>
     return (
         <nav class={styles.nav}>
             <section class={styles.logo_container}>
-                <Link href="/">
-                    <img class={styles.logo} src={logoNav} alt="digichanges logo"/>
-                </Link>
-                <Link href="/">DIGICHANGES</Link>
+                {/*<Link href="/">*/}
+                {/*    <img class={styles.logo} src={logoNav} alt="Qantec logo"/>*/}
+                {/*</Link>*/}
+                <Link href="/">Qantec</Link>
             </section>
 
             <section class={styles.nav_container}>

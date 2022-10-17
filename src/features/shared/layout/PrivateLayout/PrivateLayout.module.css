@@ -2,15 +2,15 @@
 @tailwind utilities; */
 
 .container {
-    @apply grid grid-flow-row;
+    @apply w-full;
 }
 
 .header {
-    @apply lg:max-w-screen-xl lg:w-full lg:mx-auto xl:px-6;
+    @apply lg:max-w-screen-xl lg:w-full lg:flex lg:justify-between;
 }
 
 .main_container {
-    @apply grid grid-areas-mobile-layout md:grid-areas-mobile-layout mr-4 ml-4 lg:grid-areas-desktop-layout grid-cols-desktop-layout h-full lg:max-w-screen-xl lg:w-full lg:mx-auto;
+    @apply grid grid-areas-mobile-layout md:grid-areas-mobile-layout mr-4 ml-4 lg:grid-areas-desktop-layout grid-cols-desktop-layout h-full lg:max-w-screen-xl lg:w-full;
 }
 
 .sidebar_container {
