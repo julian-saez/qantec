@@ -13,19 +13,19 @@ export const dashRoutes = [
     {
         path: '/',
         component: lazy( () => import( '../pages/dashboard' ) ),
-        name: 'a_home',
-        icon: IconHome,
-        showItem: true,
-        permission: 'Dashboard',
-    },
-    {
-        path: '/dashboard',
-        component: lazy( () => import( '../pages/dashboard' ) ),
         name: 'a_dashboard',
         icon: IconDashboard,
         showItem: true,
         permission: 'Dashboard',
     },
+    // {
+    //     path: '/dashboard',
+    //     component: lazy( () => import( '../pages/dashboard' ) ),
+    //     name: 'a_dashboard',
+    //     icon: IconDashboard,
+    //     showItem: true,
+    //     permission: 'Dashboard',
+    // },
     {
         path: '/login',
         component: lazy( () => import( '../pages/auth/login' ) ),
@@ -163,75 +163,5 @@ export const dashRoutes = [
         component: lazy( () => import( '../pages/error/Custom404/Custom404' ) ),
     },
 ];
-
-// export const dashRoutes = [
-//     {
-//         path: '',
-//         name: 'Menu',
-//         icon: null,
-//         permission: null
-//     },
-//     {
-//         path: '/dashboard',
-//         name: 'Dashboard',
-//         icon: IconHome,
-//         permission: 'Dashboard'
-//     },
-//     {
-//         path: '/users',
-//         name: 'Users',
-//         icon: IconUsers,
-//         permission: 'Dashboard',
-//
-//         // permission: permissions.USERS.LIST,
-//         children: [
-//             {
-//                 path: '/users/create',
-//                 name: 'Create',
-//                 icon: IconPlus,
-//                 permission: 'Dashboard'
-//
-//                 // permission: permissions.USERS.SAVE
-//             },
-//             {
-//                 path: '/users/',
-//                 name: 'List',
-//                 icon: IconViewList,
-//                 permission: 'Dashboard'
-//                 // permission: permissions.USERS.LIST
-//             }
-//         ]
-//     },
-//     {
-//         path: '/roles',
-//         name: 'Roles',
-//         icon: IconCog,
-//         permission: 'Dashboard',
-//         // permission: permissions.ROLES.LIST,
-//         levels: [
-//             {
-//                 path: '/roles/create',
-//                 name: 'Create',
-//                 icon: IconPlus,
-//                 permission: 'Dashboard'
-//                 // permission: permissions.ROLES.SAVE
-//             },
-//             {
-//                 path: '/roles/',
-//                 name: 'List',
-//                 icon: IconViewList,
-//                 permission: 'Dashboard'
-//                 // permission: permissions.ROLES.LIST
-//             }
-//         ]
-//     },
-//     {
-//         path: '/logout',
-//         name: 'Logout',
-//         icon: IconLogout,
-//         permission: 'Dashboard'
-//         // permission: permissions.USERS.LIST
-//     }
-// ];
 
 export const defaultRoute = '/users/list';
